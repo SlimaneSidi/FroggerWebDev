@@ -1,16 +1,38 @@
-/* Define styles for the grid cells */
-.cell {
-    width: 50px;
-    height: 50px;
-    border: 1px solid black;
-    display: inline-block;
-    text-align: center;
-    /*line-height: 50px;*/
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-/* Define styles for different values in the grid */
-.cell.empty { background-color: white; }
-.cell.player1 { background-color: red; }
-.cell.player2 { background-color: blue; }
-.cell.player3 { background-color: green; }
-.cell.player4 { background-color: yellow; }
+#map {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    max-width: 1920px; 
+    max-height: 1080px; 
+    margin: auto; 
+}
+
+.cell {
+    width: calc(100% / 21); 
+    height: calc(100% / 12); 
+    border: 1px solid black;
+    box-sizing: border-box; 
+    text-align: center;
+}
+
+.cell.grass { background-color: rgb(47, 110, 2); }
+.cell.frog { background-color: rgb(9, 66, 13); }
+.cell.water { background-color: blue; }
+.cell.wall { background-color: rgb(96, 41, 17); }
+.cell.log { background-color: rgb(43, 31, 3); }
+.cell.road { background-color: rgb(31, 31, 28); }
+.cell.mob { background-color: yellow; }
+
+
+#map br {
+    display: none; 
+}
