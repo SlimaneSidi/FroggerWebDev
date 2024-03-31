@@ -31,6 +31,7 @@ html, body {
 .cell.log { background-color: rgb(43, 31, 3); }
 .cell.road { background-color: rgb(31, 31, 28); }
 .cell.mob { background-color: yellow; }
+.cell.car { background-color: rgb(255, 0, 0); }
 
 
 #map br {
