@@ -17,16 +17,16 @@ html, body {
 }
 
 .cell {
-    width: calc(100% / 21); 
-    height: calc(100% / 14); 
-    border: 1px solid black;
+    width: calc(100% / 23); 
+    height: calc(100% / 13); 
+    border:none;
     box-sizing: border-box; 
     text-align: center;
 }
 
 .cell.grass { background-color: rgb(47, 110, 2); }
 .cell.frog { background-color: rgb(9, 66, 13); }
-.cell.water { background-color: blue; }
+/* .cell.water { background-color: blue; } */
 .cell.wall { background-color: rgb(96, 41, 17); }
 .cell.log { background-color: rgb(43, 31, 3); }
 .cell.road { background-color: rgb(31, 31, 28); }
@@ -34,6 +34,12 @@ html, body {
 .cell.fly { background-color: rgb(80, 80, 76); }
 .cell.car { background-color: rgb(255, 0, 0); }
 
+.cell.water { 
+    background-image: url(images/water1-1.gif);
+    background-size:cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 #map br {
     display: none; 
