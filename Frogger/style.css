@@ -18,7 +18,7 @@ html, body {
 
 .cell {
     width: calc(100% / 21); 
-    height: calc(100% / 12); 
+    height: calc(100% / 14); 
     border: 1px solid black;
     box-sizing: border-box; 
     text-align: center;
@@ -31,6 +31,7 @@ html, body {
 .cell.log { background-color: rgb(43, 31, 3); }
 .cell.road { background-color: rgb(31, 31, 28); }
 .cell.mob { background-color: yellow; }
+.cell.fly { background-color: rgb(80, 80, 76); }
 .cell.car { background-color: rgb(255, 0, 0); }
 
 
